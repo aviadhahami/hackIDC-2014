@@ -1,0 +1,9 @@
+syntax: glob
+bin
+bin\*
+gen
+gen\*
+
+*.bak
+*.orig
+*.class

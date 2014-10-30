@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">EasyCheck</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_final_bill">FinalBill</string>
+    <string name="title_activity_intro_screen">Intro</string>
+    <string name="totalBill">TOTAL</string>
+    <string name="coveredBill">COVERED</string>
+    <string name="balanceBill">BALANCE</string>
+    <string name="totalBillDynamic">0.0</string>
+    <string name="coveredBillDynamic">0.0</string>
+    <string name="balanceBillDynamic">0.0</string>
+    <string name="progressBarAdvance">0/100</string>
+    <string name="tableName">Table 16 Check</string>
+    <string name="appName">CheckMate</string>
+    <string name="resturantName">The Foggy Dew</string>
+    <string name="listIcon">color</string>
+    <string name="change">Change payment options for a dish</string>
+	<string name="accept">ACCEPT</string>
+</resources>

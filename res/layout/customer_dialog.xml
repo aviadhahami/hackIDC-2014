@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/customerDialogLayout"
+    android:layout_width="450dp"
+    android:layout_height="600dp"
+    android:background="#00000000" >
+
+    <LinearLayout
+        android:id="@+id/contentLinearLayout"
+        android:layout_width="400dp"
+        android:layout_height="600dp"
+        android:background="#ffffff"
+        android:orientation="vertical"
+        android:weightSum="15" >
+
+        <ListView
+            android:id="@+id/listViewPopup"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_weight="8"
+            android:background="#ffffff"
+            android:divider="#ffffff"
+            android:dividerHeight="20sp"
+            android:scrollbars="none" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="#E5E5E5" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="right|center_vertical"
+                android:gravity="center"
+                android:text=" TIP "
+                android:textAlignment="center"
+                android:textColor="#C4C4C4"
+                android:textSize="35sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="5"
+            android:background="#ffffff"
+            android:orientation="vertical" >
+
+            <SeekBar
+                android:id="@+id/customerTipSeekBar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_marginBottom="0dp"
+                android:max="10" />
+
+            <TextView
+                android:id="@+id/costumerCurrentTip"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center_vertical"
+                android:layout_marginTop="-30dp"
+                android:gravity="center"
+                android:textColor="#C4C4C4"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:layout_marginTop="40dp"
+                    android:text=" TOTAL: "
+                    android:textColor="#AFAFAF"
+                    android:textSize="30sp" />
+
+                <TextView
+                    android:id="@+id/customerSumOnTheGo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginTop="20dp"
+                    android:text=" 0.0 "
+                    android:textColor="#AFAFAF"
+                    android:textSize="30sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/anchor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/contentLinearLayout"
+        android:layout_marginRight="-28dp"
+        android:src="@drawable/meshulash" />
+
+</RelativeLayout>

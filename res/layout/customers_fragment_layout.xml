@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#191b27"
+    android:orientation="vertical"
+    android:weightSum="31" >
+
+    <RelativeLayout
+        android:id="@+id/resturantTitle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="3"
+        android:background="#313443" >
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="96dp"
+            android:layout_marginTop="12dp"
+            android:text="@string/appName"
+            android:textColor="#fff"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView4"
+            android:layout_marginLeft="96dp"
+            android:text="@string/resturantName"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="55sp"
+            android:layout_height="55sp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="22dp"
+            android:background="@drawable/thefoggydew" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#9f9f9f" />
+
+    <ListView
+        android:id="@+id/customersListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="19"
+        android:background="#313443"
+        android:divider="#313443" >
+    </ListView>
+
+    
+    <RelativeLayout
+        android:id="@+id/finalBillContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="10"
+        android:background="#313443"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/textView2"
+            android:layout_marginLeft="21dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/coveredBill"
+            android:textColor="#676767"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_alignParentTop="true"
+            android:text="@string/totalBill"
+            android:textColor="#676767"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/textView1"
+            android:layout_below="@+id/textView1"
+            android:layout_marginTop="23dp"
+            android:text="@string/balanceBill"
+            android:textColor="#676767"
+            android:textSize="25sp" />
+
+        <ProgressBar
+            android:id="@+id/billProgressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="250dp"
+            android:layout_height="match_parent"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_below="@+id/textView3"
+            android:max="100" />
+
+        <TextView
+            android:id="@+id/totalTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/textView1"
+            android:layout_alignRight="@+id/billProgressBar"
+            android:layout_marginRight="13dp"
+            android:text="@string/totalBillDynamic"
+            android:textColor="#676767"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/coveredTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView1"
+            android:layout_alignBottom="@+id/textView1"
+            
+            android:layout_alignLeft="@+id/totalTextView"
+            android:layout_marginRight="13dp"
+            android:text="@string/coveredBillDynamic"
+            android:textColor="#676767"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/balanceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/totalTextView"
+            android:layout_alignTop="@+id/textView3"
+            android:text="@string/balanceBillDynamic"
+            android:textColor="#676767"
+            android:textSize="25sp" />
+    </RelativeLayout>
+
+</LinearLayout>
